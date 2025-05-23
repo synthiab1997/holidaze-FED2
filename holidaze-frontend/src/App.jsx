@@ -31,6 +31,7 @@ function App() {
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/admin" element={<AdminDashboard />} />
           <Route path="/edit-venue/:id" element={<EditVenuePage />} />
+          <Route path="*" element={<h1>404 - Page Not Found</h1>} />
         </Routes>
       </main>
       <Footer />

@@ -1,13 +1,13 @@
 import React from 'react';
 import FilterSidebar from '../components/FilterSidebar';
 import AccommodationCard from '../components/AccommodationCard';
-import { getAllVenues } from '../services/venues';
+import { fetchVenues} from '../services/venues';
 
 function AccommodationListPage() {
   const [venues, setVenues] = React.useState([]);
 
   React.useEffect(() => {
-    getAllVenues().then(setVenues);
+    fetchVenues().then(setVenues);
   }, []);
 
   return (
